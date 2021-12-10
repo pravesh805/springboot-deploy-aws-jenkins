@@ -1,13 +1,13 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Parameters:
   SubnetID:
-    Type: String
+    Type: subnet-e3731698
   ServiceName:
-    Type: String
+    Type: springboot-deploy-aws-jenkins
   ServiceVersion:
     Type: String
   DockerHubUsername:
-    Type: String
+    Type: 
 Resources:
   Cluster:
     Type: AWS::ECS::Cluster
@@ -16,7 +16,7 @@ Resources:
   ServiceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupName: ServiceSecurityGroup
+      GroupName:  service:springboot-app
       GroupDescription: Security group for service
       SecurityGroupIngress:
         - IpProtocol: tcp
