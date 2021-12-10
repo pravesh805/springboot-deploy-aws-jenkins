@@ -16,7 +16,7 @@ Resources:
   ServiceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupName:  service:springboot-app
+      GroupName:  sg-06b9924f59f881810
       GroupDescription: Security group for service
       SecurityGroupIngress:
         - IpProtocol: tcp
